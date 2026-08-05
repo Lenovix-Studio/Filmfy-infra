@@ -1,4 +1,4 @@
-data/
+data/*
 
 storage/covers/*
 storage/movies/*
