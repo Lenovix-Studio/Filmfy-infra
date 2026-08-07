@@ -22,11 +22,6 @@ CREATE TABLE genres (
     name VARCHAR(100) NOT NULL UNIQUE
 );
 
-CREATE TABLE tags (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    name VARCHAR(100) NOT NULL UNIQUE
-);
-
 CREATE TABLE casts (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(255) NOT NULL
@@ -77,12 +72,6 @@ CREATE TABLE movie_genres (
     movie_id UUID REFERENCES movies(id) ON DELETE CASCADE,
     genre_id UUID REFERENCES genres(id) ON DELETE CASCADE,
     PRIMARY KEY(movie_id, genre_id)
-);
-
-CREATE TABLE movie_tags (
-    movie_id UUID REFERENCES movies(id) ON DELETE CASCADE,
-    tag_id UUID REFERENCES tags(id) ON DELETE CASCADE,
-    PRIMARY KEY(movie_id, tag_id)
 );
 
 CREATE TABLE movie_casts (
