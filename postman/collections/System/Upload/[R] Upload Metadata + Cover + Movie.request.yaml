@@ -1,0 +1,60 @@
+$kind: http-request
+name: "[R] Upload Metadata + Cover + Movie"
+url: "{{BASE_URL}}/movies/upload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: cover
+      src:
+        - /C:/Users/LGSM681700001/Pictures/Testing-filmfy/wallpapersden.com_anonymous-4k-rain-design_3840x2160.jpg
+      description: ""
+      disabled: false
+    - type: file
+      key: video
+      src:
+        - /C:/Users/LGSM681700001/Pictures/Testing-filmfy/WIN_20260807_13_10_08_Pro.mp4
+      description: ""
+      disabled: false
+    - type: text
+      key: code
+      value: MOV-003
+      description: ""
+      disabled: false
+    - type: text
+      key: title
+      value: Inception
+      description: ""
+      disabled: false
+    - type: text
+      key: director
+      value: Christopher Nolan
+      description: ""
+      disabled: false
+    - type: text
+      key: studio
+      value: Warner Bros
+      description: ""
+      disabled: false
+    - type: text
+      key: label
+      value: Legendary Pictures
+      description: ""
+      disabled: false
+    - type: text
+      key: genre
+      value: Action,Sci-Fi
+      description: ""
+      disabled: false
+    - type: text
+      key: cast
+      value: Leonardo DiCaprio,Elliot Page
+      description: ""
+      disabled: false
+    - type: text
+      key: series
+      value: Inception Collection
+      description: ""
+      disabled: false
+order: 1786350005475

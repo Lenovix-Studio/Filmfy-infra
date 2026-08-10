@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3001/movies/reset
+method: DELETE
+order: 1786350027119
