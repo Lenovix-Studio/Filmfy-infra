@@ -1,7 +1,7 @@
 name: filmfy
 
 services:
-  postgres:
+  postgres-dev:
     image: postgres:17-alpine
     container_name: filmfy-dev
     restart: unless-stopped
@@ -12,10 +12,35 @@ services:
       POSTGRES_PASSWORD: filmfy
 
     ports:
-      - "5432:5432"
+      - "6020:5432"
 
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      - ./data/postgres-dev:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U filmfy -d filmfy"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    networks:
+      - filmfy-network
+
+  postgres-prod:
+    image: postgres:17-alpine
+    container_name: filmfy-prod
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: filmfy
+      POSTGRES_USER: filmfy
+      POSTGRES_PASSWORD: filmfy
+
+    ports:
+      - "6021:5432"
+
+    volumes:
+      - ./data/postgres-prod:/var/lib/postgresql/data
 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U filmfy -d filmfy"]
