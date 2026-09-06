@@ -1,9 +1,6 @@
 data/*
 
-storage/covers/*
-storage/movies/*
-storage/temp/*
-storage/thumbnails/*
+storage/dev/*
 
 !storage/covers/.gitkeep
 !storage/movies/.gitkeep
