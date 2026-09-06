@@ -1,15 +1,4 @@
 data/*
 
 storage/dev/*
-
-!storage/covers/.gitkeep
-!storage/movies/.gitkeep
-!storage/temp/.gitkeep
-!storage/thumbnails/.gitkeep
-
-.env
-.env.local
-.env.*.local
-
-.DS_Store
-Thumbs.db
+storage/prod/*
