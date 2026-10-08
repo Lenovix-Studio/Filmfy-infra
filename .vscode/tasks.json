@@ -17,19 +17,19 @@
         "panel": "dedicated"
       }
     },
-    {
-      "label": "Dev Python Uvicorn",
-      "type": "shell",
-      "command": ".\\venv\\Scripts\\uvicorn main:app --port 8000 --reload",
-      "options": {
-        "cwd": "${workspaceFolder}/py-filmfy"
-      },
-      "presentation": {
-        "group": "fimlfy-dev",
-        "reveal": "always",
-        "panel": "dedicated"
-      }
-    },
+    // {
+    //   "label": "Dev Python Uvicorn",
+    //   "type": "shell",
+    //   "command": ".\\venv\\Scripts\\uvicorn main:app --port 8000 --reload",
+    //   "options": {
+    //     "cwd": "${workspaceFolder}/py-filmfy"
+    //   },
+    //   "presentation": {
+    //     "group": "fimlfy-dev",
+    //     "reveal": "always",
+    //     "panel": "dedicated"
+    //   }
+    // },
     {
       "label": "Dev Frontend",
       "type": "shell",
@@ -102,19 +102,19 @@
         "panel": "dedicated"
       }
     },
-    {
-      "label": "Prod Python Uvicorn",
-      "type": "shell",
-      "command": ".\\venv\\Scripts\\uvicorn main:app --port 8000",
-      "options": {
-        "cwd": "${workspaceFolder}/py-filmfy"
-      },
-      "presentation": {
-        "group": "fimlfy-prod",
-        "reveal": "always",
-        "panel": "dedicated"
-      }
-    },
+    // {
+    //   "label": "Prod Python Uvicorn",
+    //   "type": "shell",
+    //   "command": ".\\venv\\Scripts\\uvicorn main:app --port 8000",
+    //   "options": {
+    //     "cwd": "${workspaceFolder}/py-filmfy"
+    //   },
+    //   "presentation": {
+    //     "group": "fimlfy-prod",
+    //     "reveal": "always",
+    //     "panel": "dedicated"
+    //   }
+    // },
     {
       "label": "Prod Frontend",
       "type": "shell",
