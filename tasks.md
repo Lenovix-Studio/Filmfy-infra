@@ -1,15 +1,10 @@
 BUG:
-- detail cast page: gambar gallery tidak muncul
-- uplaod page > extract metadata: insufficient credits
+- edit film page: status tidak berubah setelah disimpan (opsi status diambil dari commonCode status).
+- edit/detail film page: belum support gif dan kompress cover/gallery
 
 IMROVE:
-- homepage: saya ingin setiap ada upload film baru, homepage autoupdate data
-- upload page > galeri foto: tambahkan tombol clear all.
-- detail movie page > galeri foto: saat di klik, muncul modal seperti slide show, bisa zoom in/out.
-- detail movie page > series metadata: munculkan metadata series.
-- cast page: perbagus halaman cast.
-- casts page: bikin halaman list casts.
-- detail movie page > streming film: kalo filmnya ga ada, bagian streeming ganti ke trailer film.
-- upload page > upload film: ada opsinal field input URL, URL itu mengarah untuk mendownload trailer.
-- edit film page: tambahkan field status
-- upload page: reduse size cover/galleri foto/film file
+- detail movie page > streming film: kalo filmnya ga ada, bagian streeming ganti ke trailer film/hilangkan container nya kalo ga ada file film atau trailer.
+- upload page > upload film: develop API untuk ambil trailer berdarkan URL yang dimasukin.
+
+HOLD:
+- upload page: compress video file.
